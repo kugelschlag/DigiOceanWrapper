@@ -22,8 +22,8 @@ public class DigiOceanClientDriver {
      */
     static private void connectWithDigitalOceanServer() {
 
-        final String digiOceanToken = "929fad6423571ce43fca674ecbdd03c23a7d46d0fa1b2bdf01335a68e3d40c77"; //testing
-        final String dropletID = "89475847";
+        final String digiOceanToken = "xxx29fadxxx"; //testing
+        final String dropletID = "xxx123xxx";
 
 
 //      final String digiOceanToken = "xxx29fad...xxx"; //stubbed, use correct token
