@@ -22,10 +22,12 @@ public class DigiOceanClientDriver {
      */
     static private void connectWithDigitalOceanServer() {
 
+        final String digiOceanToken = "929fad6423571ce43fca674ecbdd03c23a7d46d0fa1b2bdf01335a68e3d40c77"; //testing
+        final String dropletID = "89475847";
 
 
-        final String digiOceanToken = "xxx29fad...xxx"; //stubbed, use correct token
-        final String dropletID = "xxx123"; //stubbed, use correct dropLetID
+//      final String digiOceanToken = "xxx29fad...xxx"; //stubbed, use correct token
+//      final String dropletID = "xxx123"; //stubbed, use correct dropLetID
 
         try {
 
@@ -37,8 +39,8 @@ public class DigiOceanClientDriver {
             //----------------------------------------------------------------------------------------------------------
             //Test Digi Ocean API with wrapped calls and just print out response
             //----------------------------------------------------------------------------------------------------------
-            System.out.println("Rename Droplet - Digital Ocean Server says:" + oceanClient.setRenameDroplet("BarbaDroplet1").getJsonBody() + "\n\n");
-            System.out.println("Rename Droplet - Digital Ocean Server says:" + oceanClient.setRenameDroplet("BarbaDroplet2").getAction().getStatus() + "\n\n");
+            System.out.println("Rename Droplet - Digital Ocean Server says:" + oceanClient.setRenameDroplet("BarbaDroplet").getJsonBody() + "\n\n");
+            System.out.println("Rename Droplet - Digital Ocean Server says:" + oceanClient.setRenameDroplet("BarbaDroplet116").getAction().getStatus() + "\n\n");
 
 
 //            System.out.println("Reboot - Digital Ocean Server says:" + oceanClient.rebootDroplet().getJsonBody());
